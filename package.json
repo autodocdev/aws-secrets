@@ -1,0 +1,28 @@
+{
+  "name": "aws-secrets",
+  "version": "1.0.0",
+  "description": "Gera um arquivo .env com base no Secret Mananger - Úitl para CI",
+  "main": "index.js",
+  "bin": {
+    "awssecrets": "./bin/awssecrets"
+  },  
+  "dependencies": {
+    "aws-sdk": "^2.452.0",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autodocdev/aws-secrets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/autodocdev/aws-secrets/issues"
+  },
+  "homepage": "https://github.com/autodocdev/aws-secrets#readme"
+}
