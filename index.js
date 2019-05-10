@@ -44,7 +44,7 @@ client.getSecretValue({ SecretId }, (err, data) => {
             console.log(data.SecretString);
         }
     } else {
-    // secret is a binary
+        // secret is a binary
         let buff = new Buffer(data.SecretBinary, "base64");
         console.log(buff.toString("ascii"));
     }
