@@ -40,9 +40,11 @@ Uso básico
 
 ```bash
 $ docker run \
-  -e AWS_SECRET_ACCESS_KEY \
-  -e AWS_ACCESS_KEY_ID \
-  autodoc/awssecrets awssecrets --region eu-east-1 --secret nameOfSecret
+    --name awssecrets \
+    --rm \
+    -e AWS_ACCESS_KEY_ID=$SUA_ACCESS_KEY_ID \
+    -e AWS_SECRET_ACCESS_KEY=$SUA_SECRET_ACCESS_KEY \
+    autodoc/awssecrets awssecrets --region us-east-1 --secret nameOfSecret
 
 SUPER_SECRET=toto
 ULTRA_SECRET=tata
